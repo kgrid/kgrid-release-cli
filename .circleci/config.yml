@@ -39,7 +39,6 @@ jobs:
           if [ $RELEASE ]; then
               git config --global user.email "$GIT_USER_EMAIL"
               git config --global user.name "$GIT_USER_NAME"
-              echo 'package-lock.json' >> .gitignore
               echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
               echo "Update package version to $RELEASE"
               npm version $RELEASE
