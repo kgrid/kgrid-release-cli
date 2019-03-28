@@ -1,7 +1,7 @@
 # KGrid Release CLI
 [![CircleCI](https://circleci.com/gh/kgrid/kgrid-release-cli.svg?style=svg)](https://circleci.com/gh/kgrid/kgrid-release-cli)
 [![GitHub release](https://img.shields.io/github/release/kgrid/kgrid-release-cli.svg)](https://github.com/kgrid/kgrid-release-cli/releases/)
-[![npm version](https://badge.fury.io/js/%40kgrid%2Frelease-cli.svg)](https://badge.fury.io/js/%40kgrid%2Frelease-cli)
+[![npm version](https://img.shields.io/npm/v/@kgrid/release-cli.svg)](https://www.npmjs.com/package/@kgrid/release-cli)
 
 This CLI will help you trigger a Release of the KGrid components.  
 
