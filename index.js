@@ -50,6 +50,10 @@ const askQuestions = () => {
           name: 'Shelf',
           value: 'kgrid/kgrid-shelf'
         },
+        {
+          name: 'Release CLI',
+          value: 'kgrid/kgrid-release-cli'
+        },
         new inquirer.Separator("--- KO Collections ---"),
         {
           name: 'IPP Collection',
