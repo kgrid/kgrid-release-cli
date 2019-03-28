@@ -57,10 +57,19 @@ Build has started
 
 ```
 
+## Issues
+- Issues with executing ```kgrid-release``` once installed could be based on a few things
+  - make sure it is global ```npm list -g --depth=0```
+  - run ```npm bin -g``` to global bin path.
+
 ## Notes
 
 - Component Module is only need when releasing Adapters.  The project consists of mmaven submodules 
 and thus requires more information
 
-- The Demo components release process consists of updateing the the GitHub pages.  When releasing Demos
+- The Demo components release process consists of updating the the GitHub pages.  When releasing Demos
 you really only have to input a Release Version, it will be used to tag the repo.
+
+
+
+
