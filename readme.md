@@ -15,9 +15,8 @@ This CLI will help you trigger a Release of the KGrid components.
  
 1. Choose the component
 1. Adapter is sub module so if Adapter you have to say api or javascript otherwise just press enter
-1. The release version  #.#.# for releases #.#.#-rc# for release candidates. For maven projects this sets
-the version and will used to tag the GitHub repository
-1. The development version will be #.#.#-SNAPSHOT
+1. The release version #.#.# for releases #.#.#-rc# for release candidates. This will used to tag the GitHub repository. For maven projects this sets the version 
+1. The development version will be #.#.#-SNAPSHOT, used for maven projects can be innored for KO releases.
 1. If it is Pre Release type _Y_ defaults to _N_
 
 Review the additional [#note]
