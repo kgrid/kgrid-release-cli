@@ -51,7 +51,7 @@ jobs:
 
               echo "Create release $RELEASE"
               RELEASE_ID=$(curl -X POST "https://api.github.com/repos/kgrid/kgrid-release-cli/releases?access_token=$GITHUB_TOKEN" \
-                        -H 'Content-Type:application/json' -d "{\"tag_name\":\"$RELEASE\",  \"name\":\"KGrid Release cli $RELEASE\", \"prerelease\":$PRERELEASE}" | jq -r ".id")
+                        -H 'Content-Type:application/json' -d "{\"tag_name\":\"$RELEASE\",  \"name\":\"KGrid Release CLI $RELEASE\", \"prerelease\":$PRERELEASE}" | jq -r ".id")
 
 
           fi

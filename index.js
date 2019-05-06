@@ -54,6 +54,10 @@ const askQuestions = () => {
           name: 'Release CLI',
           value: 'kgrid/kgrid-release-cli'
         },
+        {
+          name: 'KGrid CLI',
+          value: 'kgrid/kgrid-cli'
+        },
         new inquirer.Separator("--- KO Collections ---"),
         {
           name: 'IPP Collection',
