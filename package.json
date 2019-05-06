@@ -1,6 +1,6 @@
 {
   "name": "@kgrid/release-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI for building KGrid components and KOs via CircleCI",
   "main": "index.js",
   "keywords": [
