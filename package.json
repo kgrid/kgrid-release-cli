@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "CLI for building KGrid components and KOs via CircleCI",
   "main": "index.js",
+  "license": "GPL-3.0-or-later",
   "keywords": [
     "kgrid",
     "cli",
@@ -13,7 +14,6 @@
     "type": "git",
     "url": "git+https://github.com/kgrid/kgrid-release-cli"
   },
-  "license": "ISC",
   "bin": {
     "kgrid-release": "./index.js"
   },

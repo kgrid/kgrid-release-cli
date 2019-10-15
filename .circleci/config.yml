@@ -41,7 +41,7 @@ jobs:
               git config --global user.name "$GIT_USER_NAME"
               echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
               echo "Update package version to $RELEASE"
-              npm version $RELEASE
+              npm version $RELEASE --allow-same-version
               git push
               npm publish --access public
 
