@@ -7,7 +7,12 @@ const axios = require('axios');
 const requireEnv = require("require-environment-variables");
 const _ = require('lodash');
 
-requireEnv(['CIRCLECI_TOKEN']);
+try {
+  requireEnv(['CIRCLECI_TOKEN']);
+} catch(e){
+  console.log("Please set the value and try again.")
+  return 1
+}
 
 const init = () => {
 
@@ -64,6 +69,10 @@ const askQuestions = () => {
           value: 'kgrid-objects/ipp-collection'
         },
         {
+          name: 'CPIC Collection',
+          value: 'kgrid-objects/cpic-collection'
+        },
+        {
           name: 'Example Collection',
           value: 'kgrid-objects/example-collection'
         },
@@ -93,8 +102,8 @@ const askQuestions = () => {
           value: 'kgrid-demos/druggenetool'
         },
         {
-          name: 'CPIC Kit Demo',
-          value: 'kgrid-demos/cpic-kit'
+          name: 'CPIC Demo',
+          value: 'kgrid-demos/cpic-demo'
         },
         {
           name: 'KGrid Kit Demo',

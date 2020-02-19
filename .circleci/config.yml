@@ -5,6 +5,7 @@
 version: 2
 jobs:
   build:
+    context: kgrid
     docker:
     # specify the version you desire here
     - image: circleci/openjdk:8-jdk-node
@@ -50,9 +51,8 @@ jobs:
               git push origin $RELEASE
 
               echo "Create release $RELEASE"
-              RELEASE_ID=$(curl -X POST "https://api.github.com/repos/kgrid/kgrid-release-cli/releases?access_token=$GITHUB_TOKEN" \
-                        -H 'Content-Type:application/json' -d "{\"tag_name\":\"$RELEASE\",  \"name\":\"KGrid Release CLI $RELEASE\", \"prerelease\":$PRERELEASE}" | jq -r ".id")
+              RELEASE_ID=$(curl -X POST "https://api.github.com/repos/kgrid/kgrid-release-cli/releases" \
+                        -H "Authorization: token $GITHUB_TOKEN" -H 'Content-Type:application/json' -d "{\"tag_name\":\"$RELEASE\",  \"name\":\"KGrid Release CLI $RELEASE\", \"prerelease\":$PRERELEASE}" | jq -r ".id")
 
 
           fi
-
