@@ -104,12 +104,7 @@ const askQuestions = () => {
         {
           name: 'CPIC Demo',
           value: 'kgrid-demos/cpic-demo'
-        },
-        {
-          name: 'KGrid Kit Demo',
-          value: 'kgrid-demos/kgrid-kit'
-        },
-
+        }
       ],
       filter: function(val) {
         return val.toLowerCase();
